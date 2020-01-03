@@ -32,7 +32,7 @@ var_dump($person);
 echo '</pre>';
 
 
-$task = [
+$tasks = [
     
     'title' => 'Learn PHP',
 
@@ -40,8 +40,9 @@ $task = [
 
     'assigned_to' => 'Abass',
 
-    'completed' => 'false'
+    'completed' => false
 ];
+
 
 
 require 'index.view.php';

@@ -11,24 +11,55 @@
 <body>
 
     <header>
-        <h1>
 
-            <?php foreach ($names as $name) : ?>
+        <ul>
+
+        <?php foreach ($names as $name) : ?>
 
             <li><?= $name; ?></li>
 
+        <?php endforeach; ?>
+
+
+
+        <?php foreach ($person as $feature => $val) : ?>
+
+            <li><strong><?= $feature; ?></strong><?= $val ?></li>
+
+        <?php endforeach; ?>
+
+
+        <div>
+
+            <?php foreach ($tasks as $task => $val) : ?>
+
+                <li><strong><?= ucwords($task); ?></strong><?= $val ?></li>
+
             <?php endforeach; ?>
 
+        </div>
 
-            <?php foreach ($person as $feature => $val) : ?>
 
-            <li><strong><?= $feature; ?></strong>
-                <?= $val ?>
+            <li>
+                <strong>Status: </strong>
+
+                <?php if($tasks['completed']) {
+
+                echo '<span>Done</span>';
+                
+                } else {
+
+                    echo '<span>Pending</span>';
+                }  
+
+                ?>
+            
             </li>
 
-            <?php endforeach; ?>
-        </h1>
+        </ul>
+
     </header>
+
 </body>
 
 </html>
