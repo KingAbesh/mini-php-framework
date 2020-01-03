@@ -24,7 +24,7 @@
 
         <?php foreach ($person as $feature => $val) : ?>
 
-            <li><strong><?= $feature; ?></strong><?= $val ?></li>
+            <li><strong><?= $feature; ?></strong>:&nbsp<?= $val ?></li>
 
         <?php endforeach; ?>
 
@@ -33,7 +33,7 @@
 
             <?php foreach ($tasks as $task => $val) : ?>
 
-                <li><strong><?= ucwords($task); ?></strong><?= $val ?></li>
+                <li><strong><?= ucwords($task); ?></strong>:&nbsp<?= $val ?></li>
 
             <?php endforeach; ?>
 
@@ -57,6 +57,19 @@
             </li>
 
         </ul>
+
+        <div>
+        <?php
+            if (ageChecker(17)) {
+
+                echo '<span>You are old enough</span>';
+
+            } else {
+
+                echo '<span>commot for here</span>';
+            }
+        ?>
+        </div>
 
     </header>
 
