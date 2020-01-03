@@ -12,15 +12,19 @@
 
     <header>
         <h1>
-            <?php
-            foreach ($names as $name) {
-               echo "<li>$name</li>";
-};
-            
-            ?>
+
             <?php foreach ($names as $name) : ?>
 
             <li><?= $name; ?></li>
+
+            <?php endforeach; ?>
+
+
+            <?php foreach ($person as $feature => $val) : ?>
+
+            <li><strong><?= $feature; ?></strong>
+                <?= $val ?>
+            </li>
 
             <?php endforeach; ?>
         </h1>
