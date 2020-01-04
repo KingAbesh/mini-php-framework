@@ -14,15 +14,24 @@
 
         <ul>
 
-        <?php foreach ($names as $name) : ?>
+        <?php foreach ($tasks as $task) : ?>
 
-            <li><?= $name; ?></li>
+
+                <?php if($task->completed) : ?>
+
+                    <strike><li><?= $task->description; ?></li></strike>
+
+                <?php else: ?>
+
+            <li><?= $task->description; ?></li>
+
+                <?php endif; ?>
 
         <?php endforeach; ?>
 
 
 
-        <?php foreach ($person as $feature => $val) : ?>
+        <!-- <?php foreach ($person as $feature => $val) : ?>
 
             <li><strong><?= $feature; ?></strong>:&nbsp<?= $val ?></li>
 
@@ -69,7 +78,7 @@
                 echo '<span>commot for here</span>';
             }
         ?>
-        </div>
+        </div> -->
 
     </header>
 
