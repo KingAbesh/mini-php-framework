@@ -1,17 +1,16 @@
 <?php
 
-require 'bootstrap.php';
+$query = require 'bootstrap.php';
+
+require 'Task.php';
 
 // echo '<pre>';
 
 // var_dump($tasks);
 
 // echo '</pre>';
-$pdo = Connection::make();
 
-$query = new QueryBuilder($pdo);
-
-$tasks = $query->selectAll('todos');
+$tasks = $query->selectAll('todos', 'Task');
 
 require 'index.view.php';
 
