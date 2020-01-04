@@ -1,18 +1,20 @@
 <?php
 
 require 'func.php';
-require 'classes.php';
+require 'Task.php';
 
 // echo '<pre>';
 
 // var_dump($tasks);
 
-// echo '<pre>';
+// echo '</pre>';
+$pdo = connectToDB();
+
+$tasks = fetchAllTasks($pdo);
 
 require 'index.view.php';
 
 die();
-
 
 $names = [
     'Abas',

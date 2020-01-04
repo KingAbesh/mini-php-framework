@@ -16,7 +16,7 @@ class Task
     public function complete()
     {
 
-        return !$this->completed;
+        return $this->completed = true;
     }
 
     public function isComplete()
@@ -37,4 +37,11 @@ $tasks = [
 
 ];
 
-// $tasks[0]->$complete();
+
+$tasks[0]->complete();
+
+// echo '<pre>';
+
+// var_dump($tasks);
+
+// echo '</pre>';
