@@ -6,7 +6,9 @@ class Request
 
      {
 
-         return $uri = trim($_SERVER['REQUEST_URI'], '/');
+        return trim(
+            parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/'
+         );
 
      }
      
