@@ -14,7 +14,7 @@ return [
 
         'options' => [
 
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 
         ]
     ],
