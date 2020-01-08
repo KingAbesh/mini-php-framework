@@ -1,26 +1,12 @@
 <?php
 
-// $router->define([
+$router->get('', 'PagesController@home');
 
-//     '' => 'controllers/index.php',
+$router->get('about', 'PagesController@about');
 
-//     'about' => 'controllers/about.php',
+// $router->get('about/culture', 'controllers/about-culture.php');
 
-//     'about/culture' => 'controllers/about-culture.php',
+$router->get('contact', 'PagesController@contact');
 
-//     'contact' => 'controllers/contact.php',
-
-//     'names' => 'controllers/add-name.php'
-// ]);
-
-
-$router->get('', 'controllers/index.php');
-
-$router->get('about', 'controllers/about.php');
-
-$router->get('about/culture', 'controllers/about-culture.php');
-
-$router->get('contact', 'controllers/contact.php');
-
-$router->post('names', 'controllers/add-name.php');
+// $router->post('names', 'controllers/add-name.php');
 
