@@ -1,2 +1,2 @@
-# PHP-From-Zero-To-Hero
-Embracing the strongest server-side scripting language. 
+# Custom PHP Framework
+Embracing the strongest server-side scripting language while building a little custom PHP framework. 
