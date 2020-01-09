@@ -1,8 +1,8 @@
 <?php require 'partials/head.php'?>
 
-<h1>Home Page</h1>
+<h1>All users</h1>
 
-<!-- <?php foreach ($users as $user): ?>
+<?php foreach ($users as $user): ?>
 
     <ul>
     <li><?=$user->name;?></li>
@@ -12,13 +12,13 @@
 
   <h1>Submit Your Name</h1>
 
-  <form method="POST" action="/names">
+  <form method="POST" action="/users">
 
     <input name="name">
 
     <button type="submit">Submit</button>
 
-  </form> -->
+  </form>
 
 
 <?php require 'partials/footer.php'?>
